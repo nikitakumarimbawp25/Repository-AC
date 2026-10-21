@@ -9,7 +9,7 @@ st.set_page_config(page_title="ABC Delivery Delay Predictor", page_icon="🚚", 
 # Load the saved Decision Tree model
 @st.cache_resource
 def load_model():
-    return joblib.load("dt_model decision tree.sav")
+    return joblib.load("dt_decision_tree.sav")
 
 model = load_model()
 
